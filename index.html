@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - เว็บไซต์ของฉัน</title>
+    <style>
+        /* สไตล์พื้นฐานเพื่อให้เห็นโครงสร้างชัดเจน */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { line-height: 1.6; background-color: #f4f4f4; color: #333; }
+        header { background: #333; color: #fff; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+        nav ul { display: flex; list-style: none; justify-content: flex-end; }
+        nav li { margin-left: 20px; }
+        nav a { color: #fff; text-decoration: none; }
+        .hero { background: #0073e6; color: #fff; padding: 60px 20px; text-align: center; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; overflow: hidden; }
+        .services { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 20px; }
+        .card { flex: 1; min-width: 250px; background: #fff; padding: 20px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .gallery-item { background: #ddd; height: 150px; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+        form { background: #fff; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #0073e6; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ส่วนหัวและเมนูนำทาง (Header & Navigation) -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 0;">
+            <h1>MyLogo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#services">บริการของเรา</a></li>
+                    <li><a href="#gallery">ผลงาน</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. ส่วนแนะนำต้อนรับ (Hero Section) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h2>
+            <p>เราให้บริการออกแบบและพัฒนาเว็บไซต์อย่างมืออาชีพ เพื่อตอบโจทย์ทุกธุรกิจของคุณ</p>
+            <br>
+            <a href="#contact"><button style="background: #fff; color: #0073e6; font-weight: bold;">เริ่มต้นใช้งาน</button></a>
+        </div>
+    </section>
+
+    <!-- Main Content ส่วนเนื้อหาหลัก -->
+    <main class="container">
+
+        <!-- 3. ส่วนบริการ (Services Section) -->
+        <section id="services" style="margin-bottom: 40px;">
+            <h2 style="text-align: center; margin-bottom: 20px;">บริการของเรา</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>ออกแบบโครงสร้างเว็บไซต์ที่สวยงาม ทันสมัย และรองรับการแสดงผลทุกหน้าจออุปกรณ์ (Responsive Design)</p>
+                </div>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>เขียนโค้ดพัฒนาโปรแกรมระบบหลังบ้าน ระบบจัดการข้อมูล และฟังก์ชันการทำงานที่เสถียรปลอดภัย</p>
+                </div>
+                <div class="card">
+                    <h3>SEO Optimization</h3>
+                    <p>ปรับแต่งเว็บไซต์ให้ติดอันดับการค้นหาบน Google ได้ง่ายขึ้น เพื่อเพิ่มยอดเข้าชมแบบธรรมชาติ</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ส่วนคลังภาพผลงาน (Gallery Section) -->
+        <section id="gallery" style="margin-bottom: 40px;">
+            <h2 style="text-align: center; margin-bottom: 20px;">ผลงานล่าสุด</h2>
+            <div class="gallery">
+                <div class="gallery-item">ภาพผลงาน 1</div>
+                <div class="gallery-item">ภาพผลงาน 2</div>
+                <div class="gallery-item">ภาพผลงาน 3</div>
+                <div class="gallery-item">ภาพผลงาน 4</div>
+            </div>
+        </section>
+
+        <!-- 5. ส่วนเกี่ยวกับเรา (About Us Section) -->
+        <section id="about" style="margin-bottom: 40px; background: #fff; padding: 30px; border-radius: 8px;">
+            <h2>เกี่ยวกับเรา</h2>
+            <p>เราเป็นทีมงานผู้เชี่ยวชาญด้านดิจิทัลที่มีประสบการณ์มากกว่า 5 ปี มุ่งมั่นที่จะช่วยขับเคลื่อนธุรกิจของลูกค้าให้เติบโตในโลกออนไลน์ด้วยเทคโนโลยีที่ทันสมัยและบริการที่ใส่ใจในทุกรายละเอียด</p>
+        </section>
+
+        <!-- 6. ส่วนฟอร์มติดต่อเรา (Contact Section) -->
+        <section id="contact">
+            <h2 style="text-align: center; margin-bottom: 20px;">ติดต่อเรา</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">ชื่อผู้ติดต่อ:</label>
+                    <input type="text" id="name" name="name" required placeholder="กรุณากรอกชื่อของคุณ">
+                </div>
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">ข้อความ:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="พิมพ์ข้อความที่ต้องการติดต่อ..."></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">ส่งข้อความ</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 7. ส่วนท้ายเว็บ (Footer) -->
+    <footer>
+        <p>&copy; 2026 MyWebsite. All Rights Reserved. | พัฒนาด้วยความใส่ใจ</p>
+    </footer>
+
+</body>
+</html>
